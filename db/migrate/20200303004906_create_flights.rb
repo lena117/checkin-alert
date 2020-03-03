@@ -4,7 +4,7 @@ class CreateFlights < ActiveRecord::Migration[6.0]
       t.integer :passenger_id
       t.time :departs_at
       t.string :description
-      t.boolean :message_sent
+      t.boolean :message_sent, { :default => false}
 
       t.timestamps
     end
